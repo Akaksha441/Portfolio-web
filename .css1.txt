@@ -1,23 +1,123 @@
-body {
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-header {
-    background: #333;
+body {
+    line-height: 1.6;
+    color: #ad6868ff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: #2c51a5ff;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: #38bdf8;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover {
+    color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #134bccff, #1836beff);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero span {
+    color: #38bdf8;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #38bdf8;
+    color: #020617;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+/* Sections */
+.section {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.bg-light {
+    background: #f1f5f9;
+}
+
+.bg-dark {
+    background: #020617;
+    color: white;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.skill {
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(196, 32, 32, 0.1);
+    font-weight: 500;
+}
+
+/* Projects */
+.project-card {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #db60c7ff;
+    box-shadow: 0 5px 15px rgba(228, 32, 195, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #25a3d4ff;
     color: white;
     text-align: center;
-    padding: 30px;
-}
-
-section {
-    padding: 20px;
-    margin: 10px;
-    background: white;
-}
-
-h2 {
-    color: #333;
+    padding: 15px;
 }
